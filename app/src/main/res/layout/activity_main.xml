@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="201dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Contador de Monedas"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/cincoeuros"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="5 Euros"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.033" />
+
+
+    <EditText
+        android:id="@+id/doseuros"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="2 Euros"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <EditText
+        android:id="@+id/uneuros"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="1 Euros"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.168" />
+
+
+    <EditText
+        android:id="@+id/cincuentacent"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="0.50 Centimos"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <TextView
+        android:id="@+id/mostrar"
+        android:layout_width="134dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="104dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enviar" />
+
+    <Button
+        android:id="@+id/enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="328dp"
+        android:onClick="calcular"
+        android:text="enviar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
