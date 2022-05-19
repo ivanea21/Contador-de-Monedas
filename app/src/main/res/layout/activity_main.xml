@@ -53,7 +53,7 @@
         app:layout_constraintVertical_bias="0.034" />
 
     <EditText
-        android:id="@+id/uneuro"
+        android:id="@+id/uneuros"
         android:layout_width="170dp"
         android:layout_height="48dp"
         android:layout_marginStart="24dp"
@@ -117,13 +117,13 @@
         app:layout_constraintVertical_bias="0.282" />
 
     <EditText
-        android:id="@+id/cicocent"
+        android:id="@+id/cincocent"
         android:layout_width="170dp"
         android:layout_height="48dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="10dp"
         android:ems="10"
-        android:hint="0.10 Céntimos"
+        android:hint="0.05 Céntimos"
         android:inputType="number"
         android:minHeight="48dp"
         android:textColorHint="#757575"
